@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandra D'agostino - MakeUp Artist</title>
+    
+    <!-- Font Eleganti di Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Collegamento al file CSS esterno -->
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+    <!-- Hero Section con Onda Automatica e Altezza Ridotta -->
+    <header class="hero-interattiva animazione-scroll">
+        <div class="livello-sfondo livello-bn"></div>
+        <div class="livello-sfondo livello-colori"></div>
+        
+        <div class="contenuto-hero">
+            <h1 class="titolo-principale">Alessandra D'agostino</h1>
+            <p class="sottotitolo">Professional MakeUp Artist</p>
+        </div>
+        
+        <!-- Indicatore di scroll per guidare l'utente -->
+        <div class="indicatore-scroll">
+            <span>Scopri di più</span>
+            <div class="freccia-giu"></div>
+        </div>
+    </header>
+
+    <sezione id="chi-sono" class="animazione-scroll">
+        <div class="contenitore-bio glass">
+            <h2 class="titolo-sezione">Chi Sono</h2>
+            <p class="testo-bio">
+                Ciao! Sono <span class="evidenziato">Alessandra</span>, ho 21 anni e sono nata a Palermo.<br><br>
+                Il mio percorso creativo è iniziato al <span class="evidenziato">Liceo Artistico Mario D'Aleo</span> di Monreale, dove ho sviluppato la mia passione per l'arte e i colori. Successivamente, ho deciso di trasformare questa passione nella mia professione, completando il percorso di studi presso la <span class="evidenziato">Makeup Training</span> e ottenendo la qualifica ufficiale di MakeUp Artist.<br><br>
+                L'arte del trucco è il mio modo di esprimere me stessa e di esaltare la bellezza, che si tratti di un look editoriale, artistico o di una cerimonia.
+            </p>
+        </div>
+    </sezione>
+
+    <sezione id="portfolio">
+        <h2 class="titolo-sezione animazione-scroll">Il Mio Portfolio</h2>
+
+        <!-- Categoria: Trucchi Artistici ed Effetti -->
+        <div class="categoria-portfolio glass animazione-scroll">
+            <h3 class="titolo-categoria">Trucchi Artistici & Teatrali</h3>
+            <p class="descrizione-categoria">
+                Qui l'immaginazione prende forma. Attraverso l'uso del colore, delle texture e del body painting, trasformo il volto in una vera e propria tela, creando personaggi fantastici e illusioni ottiche.
+            </p>
+            <div class="contenitore-carosello">
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat8.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat11.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat14.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat2.jpg" alt="Trucco Avatar Creatura Marina" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat3.jpg" alt="Trucco Teschio Colorato" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat4.jpg" alt="Trucco Medusa con Serpenti" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat5.jpg" alt="Trucco Artistico Sole e Luna" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat6.jpg" alt="Trucco Editoriale Fiori" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat7.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat9.jpg" alt="Trucco Artistico Fluorescente" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat10.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat12.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat13.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat14.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat15.jpg" alt="Trucco Artistico" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trat1.jpg" alt="Trucco Artistico Clown" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+
+            </div>
+        </div>
+
+        <!-- Categoria: Glamour ed Editoriali -->
+        <div class="categoria-portfolio glass animazione-scroll">
+            <h3 class="titolo-categoria">Editoriali & Glamour</h3>
+            <p class="descrizione-categoria">
+                Makeup pensati per set fotografici e riviste. Focus su linee grafiche, accostamenti audaci, dettagli gioiello e sfumature perfette per valorizzare i lineamenti sotto le luci da studio.
+            </p>
+            <div class="contenitore-carosello">
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg11.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg10.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg9.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg8.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg1.jpg" alt="Trucco Glamour Viola" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg2.jpg" alt="Trucco Editoriale Glossy con Perle" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg3.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg4.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg5.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg6.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg7.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg12.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg13.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg14.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg15.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/treg16.jpg" alt="Trucco Editoriale" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+
+            </div>
+        </div>
+
+        <!-- Categoria: Cerimonia -->
+        <div class="categoria-portfolio glass animazione-scroll">
+            <h3 class="titolo-categoria">Cerimonia & Beauty</h3>
+            <p class="descrizione-categoria">
+                L'eleganza della semplicità. Trucchi pensati per durare tutto il giorno, esaltando la naturale bellezza con tecniche soft glam e basi luminose, ideali per spose ed eventi speciali.
+            </p>
+            <div class="contenitore-carosello">
+                
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trcb2.jpg" alt="Trucco Soft Glam Cerimonia" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trcb3.jpg" alt="Trucco Cerimonia" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trcb4.jpg" alt="Trucco Cerimonia" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trcb5.jpg" alt="Trucco Cerimonia" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trcb1.jpg" alt="Trucco Cerimonia Capelli Ricci" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+                <div class="scheda-immagine" onclick="apriImmagine(this)"><img src="img/trcb6.jpg" alt="Trucco Cerimonia" class="immagine-portfolio"><div class="overlay-ingrandisci">Espandi</div></div>
+
+            </div>
+        </div>
+    </sezione>
+
+    <sezione id="contatti">
+        <h2 class="titolo-sezione animazione-scroll">Prenota un Appuntamento</h2>
+        
+        <div class="contenitore-form glass animazione-scroll">
+            <form id="form-prenotazione" onsubmit="inviaEmail(event)">
+                <div class="riga-form">
+                    <div class="gruppo-input">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" required placeholder="Il tuo nome">
+                    </div>
+                    <div class="gruppo-input">
+                        <label for="cognome">Cognome</label>
+                        <input type="text" id="cognome" required placeholder="Il tuo cognome">
+                    </div>
+                </div>
+                
+                <div class="riga-form">
+                    <div class="gruppo-input">
+                        <label for="email">La tua Email</label>
+                        <input type="email" id="email" required placeholder="esempio@mail.com">
+                    </div>
+                    <div class="gruppo-input">
+                        <label for="data">Data Desiderata (Opzionale)</label>
+                        <input type="date" id="data">
+                    </div>
+                </div>
+
+                <div class="gruppo-input">
+                    <label for="messaggio">Raccontami la tua idea (Cerimonia, Editoriale, Artistico...)</label>
+                    <textarea id="messaggio" rows="5" required placeholder="Scrivi qui i dettagli del trucco che desideri..."></textarea>
+                </div>
+
+                <button type="submit" class="bottone-invia">Invia Richiesta</button>
+            </form>
+        </div>
+
+        <h2 class="titolo-sezione animazione-scroll" style="margin-top: 80px;">I Miei Contatti</h2>
+        <div class="griglia-contatti animazione-scroll">
+            <div class="scheda-contatto glass">
+                <h3>WhatsApp</h3>
+                <p>+39 327 972 7407</p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/393279727407&bgcolor=ffffff" alt="QR WhatsApp" class="immagine-qr">
+                <br>
+                <a href="https://wa.me/393279727407" class="bottone-social" target="_blank">Chatta Ora</a>
+            </div>
+
+            <div class="scheda-contatto glass">
+                <h3>Instagram</h3>
+                <p>@ale_dagostino_100</p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.instagram.com/ale_dagostino_100&bgcolor=ffffff" alt="QR Instagram" class="immagine-qr">
+                <br>
+                <a href="https://www.instagram.com/ale_dagostino_100" class="bottone-social" target="_blank">Visita Profilo</a>
+            </div>
+        </div>
+    </sezione>
+
+    <!-- Modale per Immagini a Schermo Intero (con navigazione) -->
+    <div id="visualizzatore-immagini" class="modale" onclick="chiudiImmagine(event)">
+        <span class="chiudi-modale" onclick="chiudiImmagineForzata()">&times;</span>
+        
+        <span class="nav-modale prev" onclick="cambiaImmagine(-1, event)">&#10094;</span>
+        <span class="nav-modale next" onclick="cambiaImmagine(1, event)">&#10095;</span>
+        
+        <img class="contenuto-modale" id="immagine-ingrandita">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
