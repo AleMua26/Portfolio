@@ -528,3 +528,235 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .chiudi-modale { right: 20px; top: 10px; }
     .categoria-portfolio { padding: 25px 15px; }
 }
+
+/* =========================================
+    BIGLIETTO DA VISITA INTERATTIVO (3D FLIP)
+    ========================================= */
+.sottotitolo-biglietto {
+    text-align: center;
+    color: var(--colore-testo-secondario);
+    font-size: 0.95rem;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.contenitore-biglietto {
+    width: 100%;
+    max-width: 520px;
+    height: 290px;
+    margin: 0 auto 50px auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.carta-3d {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(155, 81, 224, 0.25);
+}
+
+.contenitore-biglietto:hover .carta-3d {
+    transform: rotateY(180deg);
+}
+
+.lato-carta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 14px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #a855f7 0%, #7e22ce 50%, #581c87 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Onde decorative laterali uguali alle immagini */
+.onda-sinistra, .onda-destra {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    pointer-events: none;
+}
+
+.onda-sinistra {
+    left: 0;
+    width: 40%;
+    background: radial-gradient(ellipse at left, rgba(216, 180, 254, 0.3) 0%, rgba(168, 85, 247, 0.1) 60%, transparent 100%);
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+}
+
+.onda-destra {
+    right: 0;
+    width: 25%;
+    background: radial-gradient(ellipse at right, rgba(233, 213, 255, 0.2) 0%, transparent 70%);
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+}
+
+/* FRONTE */
+.fronte-carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenuto-fronte {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-farfalla {
+    width: 120px;
+    height: 96px;
+    margin: 0 auto 10px auto;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+.nome-biglietto {
+    font-family: var(--font-testo);
+    font-size: 1.35rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.ruolo-biglietto {
+    font-family: var(--font-testo);
+    font-size: 0.85rem;
+    letter-spacing: 5px;
+    color: #f3e8ff;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* RETRO */
+.retro-carta {
+    transform: rotateY(180deg);
+    padding: 25px 35px;
+    box-sizing: border-box;
+}
+
+.contenuto-retro {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: #ffffff;
+}
+
+.nome-retro {
+    font-family: var(--font-testo);
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ffffff;
+    border-bottom: 1.5px dotted #ffffff;
+    padding-bottom: 2px;
+    display: inline-block;
+}
+
+.ruolo-retro {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    color: #f3e8ff;
+    margin-top: 3px;
+}
+
+.sezione-servizi {
+    margin-top: 8px;
+}
+
+.titolo-servizi {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.sezione-servizi ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sezione-servizi li {
+    font-size: 0.85rem;
+    color: #f3e8ff;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.preventivo-gratuito {
+    font-family: var(--font-titoli);
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin: 8px 0;
+}
+
+.preventivo-gratuito span {
+    text-decoration: underline;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.lista-recapiti {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item-recapito {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.icona-social {
+    width: 22px;
+    height: 22px;
+}
+
+.tag-makeup {
+    font-size: 0.85rem;
+    color: #ffffff;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+/* Adattamento Mobile Biglietto */
+@media (max-width: 580px) {
+    .contenitore-biglietto {
+        max-width: 340px;
+        height: 200px;
+    }
+    .retro-carta { padding: 15px 20px; }
+    .logo-farfalla { width: 70px; height: 56px; margin-bottom: 2px; }
+    .nome-biglietto { font-size: 0.9rem; letter-spacing: 1px; }
+    .ruolo-biglietto { font-size: 0.6rem; letter-spacing: 2px; }
+    .nome-retro { font-size: 0.95rem; }
+    .ruolo-retro { font-size: 0.55rem; letter-spacing: 1.5px; }
+    .titolo-servizi { font-size: 0.65rem; }
+    .sezione-servizi li { font-size: 0.65rem; }
+    .preventivo-gratuito { font-size: 0.7rem; margin: 4px 0; }
+    .item-recapito { font-size: 0.8rem; gap: 8px; }
+    .icona-social { width: 16px; height: 16px; }
+    .tag-makeup { font-size: 0.65rem; }
+}
